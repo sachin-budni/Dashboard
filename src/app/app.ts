@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.scss',
-  imports: [DashboardComponent],
+  imports: [RouterOutlet],
 })
 export class App {
   protected title = 'dashboard';
@@ -18,3 +18,4 @@ export class App {
     );
   }
 }
+
