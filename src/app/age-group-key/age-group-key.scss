@@ -1,0 +1,76 @@
+/* Container for the whole section */
+.key-findings-container {
+  padding: 20px;
+  background-color: #f8f8f8; /* Light background for the overall section */
+  font-family: Arial, sans-serif;
+}
+
+/* Heading style */
+.key-findings-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Flex container for the cards */
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between cards */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Basic style for all Material Cards */
+.finding-card {
+  flex: 1; /* Allows cards to take equal space */
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); /* Subtle shadow */
+}
+
+/* Content alignment within the card */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+/* Main text (number/key phrase) */
+.main-text {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+/* Sub text (description) */
+.sub-text {
+  font-size: 0.9em;
+  color: #666;
+  margin: 0;
+  padding: 0;
+}
+
+/* Specific text colors */
+.green-text {
+  color: #559900; /* Darker green for contrast */
+}
+
+.yellow-text {
+  color: #c99600; /* Gold/yellow color */
+}
+
+/* Optional: Adjust card content for better vertical alignment if needed */
+.finding-card mat-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

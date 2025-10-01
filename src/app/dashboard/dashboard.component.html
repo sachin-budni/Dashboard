@@ -1,0 +1,65 @@
+<div class="container">
+  <mat-card class="headline-card">
+      <h2>Kuppam ECD PROJECT (25 Centers)</h2>
+      <mat-card-subtitle>Program Dashboard</mat-card-subtitle>
+  </mat-card>
+  <mat-card class="p-6 program-dash">
+    <h2 class="m-0">Program Dashboard</h2>
+    <div class="cards">
+      @for(item of topCards;track item.name) {
+        <mat-card class="stat p-6">
+          <div>
+            <h4>{{item.name}}</h4>
+            <p>{{item.value}}</p>
+          </div>
+          <button mat-icon-button color="Accent" class="dashboard-icon">
+            <span class="material-symbols-rounded">{{item.icon}}</span>
+          </button>
+        </mat-card>
+      }
+    </div>
+    <mat-card class="p-6 first-card">
+      <div>
+        <h1>157 Lives Transformed</h1>
+        <p class="m-0">How Early Intervention Changed Everything</p>
+      </div>
+      <div>
+        @for(item of singleIcon; track item.name) {
+          <div class="card-1">
+            <p>{{item.value}}</p>
+            <p class="m-0">{{item.name}}</p>
+          </div>
+        }
+        <button mat-raised-button color="Accent">
+          <span class="material-symbols-rounded" style="--size: 18px; --wt: 500">import_contacts</span>
+          <span>Full Story</span>
+        </button>
+      </div>
+  
+    </mat-card>
+    <app-screening-timelines></app-screening-timelines>
+    <app-referrals></app-referrals>
+    <mat-card class="chart-card">
+      <app-dq-chart></app-dq-chart>
+      <!-- <app-dq-chart2></app-dq-chart2> -->
+      <app-age-group-key></app-age-group-key>
+    </mat-card>
+    <app-delay-chart></app-delay-chart>
+    <app-skills-breakdown></app-skills-breakdown>
+    <!-- <app-skills-breakdown2></app-skills-breakdown2> -->
+    <app-filter-cards></app-filter-cards>
+    <app-anganwadi-locations></app-anganwadi-locations>
+    <app-assessments></app-assessments>
+    <app-children-demographics></app-children-demographics>
+    <app-social-cognitive></app-social-cognitive>
+    <app-motor-language></app-motor-language>
+    <app-distribution-breakdown></app-distribution-breakdown>
+  </mat-card>
+
+  <!-- <mat-card class="chart-card">
+    <highcharts-chart
+      [options]="chartOptions"
+      style="width: 100%; height: 400px; display:block;">
+    </highcharts-chart>
+  </mat-card> -->
+</div>

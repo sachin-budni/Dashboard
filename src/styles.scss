@@ -1,0 +1,108 @@
+
+@use '@angular/material' as mat;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+// @import '~leaflet/dist/leaflet.css';
+
+
+
+html {
+  @include mat.theme((
+    color: (
+      primary: mat.$azure-palette,
+      tertiary: mat.$blue-palette,
+    ),
+    typography: Roboto,
+    density: 0,
+  ));
+}
+
+body {
+  // Default the application to a light color theme. This can be changed to
+  // `dark` to enable the dark color theme, or to `light dark` to defer to the
+  // user's system settings.
+  color-scheme: light;
+
+  // Set a default background, font and text colors for the application using
+  // Angular Material's system-level CSS variables. Learn more about these
+  // variables at https://material.angular.dev/guide/system-variables
+  background-color: var(--mat-sys-surface);
+  color: var(--mat-sys-on-surface);
+  font: var(--mat-sys-body-medium);
+
+  // Reset the user agent margin.
+  margin: 0;
+}
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.material-symbols-rounded {
+  font-family: 'Material Symbols Rounded';
+  font-weight: 100;
+  font-style: normal;
+  font-size: var(--size, 32px);  /* change as needed */
+  line-height: 1;
+  display: inline-block;
+  white-space: nowrap;
+  direction: ltr;
+
+  font-variation-settings:
+    'FILL' 0,   /* 0 = outline style, 1 = filled style */
+    'wght' var(--wt, 500), /* thickness */
+    'GRAD' 0,   /* grade */
+    'opsz' 48;  /* optical size */
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.m-0 {
+  margin: 0px !important;
+}
+
+:root {
+  --p-6: 1.5rem;
+  --sm-icon: 24px;
+  --md-icon: 32px;
+  --xs-icon: 18px;
+  --xl-icon: 40px;
+  --icon-100: 100;
+  --icon-200: 200;
+  --icon-300: 300;
+}
+
+.mat-mdc-raised-button .mdc-button__label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.chips .mat-mdc-chip-action-label {
+  font-size: 12px !important;
+}
+
+.mat-mdc-form-field-bottom-align {
+  display: none !important;
+}
+
+.ol-zoom-out, .ol-zoom-in {
+  font-size: 24px;
+  padding: 0px 8px;
+}
+.ol-zoom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+}
+.ol-rotate,
+.ol-attribution {
+  display: none !important;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}

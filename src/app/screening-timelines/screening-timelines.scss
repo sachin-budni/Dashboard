@@ -1,0 +1,66 @@
+.screening-card {
+  padding: 1rem;
+
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    .check-icon {
+      font-size: 32px;
+      margin-right: 10px;
+      color: #6dbb6d;
+    }
+
+    h2 {
+      margin: 0;
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0;
+      font-size: 14px;
+      color: #777;
+    }
+  }
+
+  table {
+    width: 100%;
+
+    th {
+      font-weight: 600;
+      background: #f6fbe9;
+      color: #555;
+    }
+
+    td {
+      padding: 1rem 0.5rem;
+      vertical-align: middle;
+    }
+  }
+
+  .timeline-title {
+    font-weight: 500;
+  }
+
+  .age-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .progress-wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  mat-progress-bar {
+    height: 8px;
+    border-radius: 4px;
+  }
+}
+.chips {
+  background-color: rgb(235 247 224) !important;
+}

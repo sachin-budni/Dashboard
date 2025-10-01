@@ -1,0 +1,33 @@
+.dashboard-container {
+  padding: 20px;
+
+  .title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+
+  .subtitle {
+    margin-bottom: 16px;
+    color: #666;
+  }
+
+  .charts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .chart-card {
+      flex: 1 1 calc(50% - 20px);
+      padding: 16px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .footer {
+      margin-top: 12px;
+      font-weight: 500;
+      text-align: right;
+      color: #444;
+    }
+  }
+}

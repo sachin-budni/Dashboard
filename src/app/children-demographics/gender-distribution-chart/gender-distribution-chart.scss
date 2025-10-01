@@ -1,0 +1,74 @@
+.chart-sub-card {
+  width: 100%;
+  box-shadow: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  mat-card-header {
+    padding: 15px 20px 10px 20px;
+    align-items: center;
+    .card-icon {
+      margin-right: 8px;
+      color: #777;
+      font-size: 20px;
+      height: 20px;
+      width: 20px;
+    }
+    mat-card-title {
+      font-size: 16px;
+      font-weight: 500;
+      color: #333;
+    }
+  }
+
+  mat-card-content {
+    flex-grow: 1;
+    padding: 0 10px 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; // Center the donut chart
+  }
+
+  .chart-container {
+    height: 250px; // Fixed height for donut chart
+    width: 100%;
+    display: flex;
+    justify-content: center; // Center chart if it's smaller than container
+    align-items: center;
+  }
+
+  .chart-footer-gender {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; // Space out Male/Female items
+    padding-top: 10px;
+    font-size: 14px;
+    color: #333;
+    border-top: 1px solid #f0f0f0; // Separator line
+
+    .gender-item {
+      display: flex;
+      flex-direction: column; // Stack label and value
+      text-align: center;
+      margin: 0 5px;
+    }
+
+    .gender-label {
+      font-weight: 500;
+      margin-bottom: 2px;
+      &.female { color: #F48FB1; } // Pink
+      &.male { color: #64B5F6; } // Blue
+    }
+
+    .gender-value {
+      font-weight: bold;
+      &.female { color: #F48FB1; }
+      &.male { color: #64B5F6; }
+    }
+  }
+}

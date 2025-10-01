@@ -1,0 +1,31 @@
+<mat-card class="p-6">
+    <div class="title-details">
+        <div>
+            <mat-card-title>Developmental Delays by Screening Timeline</mat-card-title>
+            <mat-card-subtitle>
+                Compare delay distribution across different screening timelines as percentages.
+            </mat-card-subtitle>
+        </div>
+        <div>
+            <button mat-flat-button (click)="onChange('line')" [color]="lineChartType === 'line' ? 'primary' : ''">
+                <div class="btn">
+                    <span class="material-symbols-rounded" style="--size: 24px; --wt: 100">show_chart</span>
+                    <span>Line</span>
+                </div>
+            </button>
+            <button mat-flat-button (click)="onChange('bar')" [color]="lineChartType === 'bar' ? 'primary' : ''">
+                <div class="btn">
+                    <span class="material-symbols-rounded"  style="--size: 24px; --wt: 100">bar_chart</span>
+                    <span>Bar</span>
+                </div>
+            </button>
+        </div>
+    </div>
+    <div style="height: 300px; width: 100%;">
+            <canvas baseChart
+                [options]="ChartOptions"
+                [data]="ChartData"
+                [type]="lineChartType">
+            </canvas>
+        </div>
+</mat-card>

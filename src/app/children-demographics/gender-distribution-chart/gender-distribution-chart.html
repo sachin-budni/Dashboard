@@ -1,0 +1,25 @@
+<mat-card class="chart-sub-card">
+  <mat-card-header>
+    <!-- <mat-icon class="card-icon">wc</mat-icon> -->
+    <span class="material-symbols-rounded card-icon">wc</span>
+    <mat-card-title>Gender Distribution</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="chart-container">
+      <highcharts-chart
+        [options]="chartOptions"
+        style="width: 100%; display: block;"
+      ></highcharts-chart>
+    </div>
+    <div class="chart-footer-gender">
+      <div class="gender-item">
+        <span class="gender-label female">Female:</span>
+        <span class="gender-value female">{{ femaleCount }} ({{ femalePercentage }}%)</span>
+      </div>
+      <div class="gender-item">
+        <span class="gender-label male">Male:</span>
+        <span class="gender-value male">{{ maleCount }} ({{ malePercentage }}%)</span>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,22 @@
+<div style="padding: 16px;">
+  <h2>Social Emotional & Cognitive Skills Development</h2>
+  <p>Based on CDC results across all screening timelines</p>
+
+  <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+    <mat-card style="flex: 1 1 45%;">
+      <highcharts-chart
+        [options]="socialEmotionalChart"
+        style="width: 100%; height: 400px; display: block;"
+      ></highcharts-chart>
+      <div style="text-align: right; font-weight: bold;">Total assessments: 2080</div>
+    </mat-card>
+
+    <mat-card style="flex: 1 1 45%;">
+      <highcharts-chart
+        [options]="cognitiveSkillsChart"
+        style="width: 100%; height: 400px; display: block;"
+      ></highcharts-chart>
+      <div style="text-align: right; font-weight: bold;">Total assessments: 2048</div>
+    </mat-card>
+  </div>
+</div>

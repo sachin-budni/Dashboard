@@ -1,0 +1,35 @@
+<mat-card class="">
+  <div class="map-container">
+    <div class="map-header">
+      <h1 class="mat-h1">
+        <span class="material-symbols-rounded location_icon">location_on</span>
+        Anganwadi Locations
+      </h1>
+      <div>
+        <mat-form-field appearance="outline" class="children-select">
+          <mat-label>Number of Children</mat-label>
+          <mat-select [value]="selectedMetric" (selectionChange)="onMetricChange($event.value)">
+            <mat-option value="children">Number of Children</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <span class="material-symbols-rounded">fullscreen</span> </div>
+      </div>
+  
+    <div class="map-legend">
+      <div class="legend-item">
+        <span class="legend-color-dot ang-loc"></span>
+        Anganwadi locations
+      </div>
+      <div class="legend-item">
+        <span class="legend-text">Bubble size = Number of children</span>
+      </div>
+    </div>
+  
+    <div id="map" class="map-canvas"></div>
+  
+    <div class="map-footer">
+      <span>Showing 25 anganwadis with location data</span>
+      <span class="total-count">Total children: 2360</span>
+    </div>
+  </div>
+</mat-card>

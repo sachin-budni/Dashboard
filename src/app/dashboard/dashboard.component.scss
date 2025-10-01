@@ -1,0 +1,78 @@
+.container {
+  padding: 16px;
+}
+mat-card {
+  
+}
+.headline-card {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.headline-card h2 {
+  font-weight: 500;
+  margin: 6px 0px;
+}
+.cards {
+  display: flex;
+  gap: var(--p-6);
+}
+.stat {
+  flex: 1 1 0;
+  background-color: rgb(246 251 241/var(--tw-bg-opacity,1));
+  border: rgb(216 239 195/var(--tw-border-opacity,1));
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.stat p {
+  margin: 0px;
+  font-size: 24px;
+  font-weight: 800;
+}
+.chart-card {
+  padding: 12px;
+}
+.first-card {
+  background-image: linear-gradient(to bottom right,#93ac23 , #6a7b1d);
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.first-card > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 16px;
+}
+.first-card h1 {
+  font-size: var(--p-6);
+  font-weight: 800;
+}
+
+.program-dash {
+  gap: var(--p-6);
+}
+.card-1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-1 p:first-child {
+  font-size: 28px;
+  font-weight: 800;
+}
+button .material-symbols-rounded {
+  font-size: 24px !important;
+}
+.dashboard-icon {
+  background-color: rgb(255 255 255/0.5);
+  color: rgb(147 172 35/1);
+  box-shadow: 0 0 #0000,0 0 #0000,0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06);
+  border-radius: 6px;
+}

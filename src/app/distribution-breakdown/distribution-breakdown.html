@@ -1,0 +1,17 @@
+<div class="dashboard">
+  <mat-card class="chart-card">
+    <highcharts-chart
+      [options]="delayCountChartOptions"
+      style="width: 100%; height: 400px; display: block;"
+    ></highcharts-chart>
+    <div class="footer-text">Total children analyzed: <strong>{{ totalChildren }}</strong></div>
+  </mat-card>
+
+  <mat-card class="chart-card">
+    <highcharts-chart
+      [options]="delayTypeChartOptions"
+      style="width: 100%; height: 400px; display: block;"
+    ></highcharts-chart>
+    <div class="footer-text">Total assessments: <strong>{{ totalChildren }}</strong></div>
+  </mat-card>
+</div>

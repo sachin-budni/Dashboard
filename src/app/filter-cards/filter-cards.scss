@@ -1,0 +1,67 @@
+.card-container {
+  display: flex;
+  // justify-content: center;
+  gap: 20px; // Space between cards
+  padding: 20px 0px;
+}
+
+.dashboard-card {
+  width: 350px; // Adjust width as needed
+  border-left: 5px solid transparent; // For the colored border on the left
+  flex: 1 1 100%;
+}
+
+.angawadi-card {
+  border-left-color: #3f51b5; // Blue for Anganwadis
+}
+
+.children-card {
+  border-left-color: #4caf50; // Green for Children
+}
+
+mat-card-title {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.content-row {
+  display: flex;
+  align-items: center;
+}
+
+.icon-blue {
+  color: #3f51b5; // Material primary blue
+  font-size: 32px; // Larger icon
+  margin-right: 10px;
+}
+
+.value-blue {
+  color: #3f51b5;
+  font-size: 24px; // Larger number
+  font-weight: bold;
+}
+
+.icon-green {
+  color: #4caf50; // Material green
+  font-size: 32px;
+  margin-right: 10px;
+}
+
+.value-green {
+  color: #4caf50;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+}
+
+.dashboard-card > div {
+  display: flex;
+  padding: 0px 20px;
+  align-items: center;
+}

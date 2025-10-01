@@ -1,0 +1,66 @@
+<div class="chart-container mat-elevation-z2">
+    <div class="chart-header">
+        <div class="header-text">
+            <h2>Skills Breakdown by Screening Timeline</h2>
+            <p>Compare the percentage of children with delays in specific developmental skills (Social Emotional, Cognitive, Motor, Language & Communication) across different screening timelines.</p>
+            <div class="legend-filter">
+                <div class="screening-label">
+                    <span class="dot-s1"></span> Screening 1
+                </div>
+                <div class="screening-label">
+                    <span class="dot-s2"></span> Screening 2
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-controls">
+            <button mat-flat-button [color]="chartType === 'line' ? 'primary' : 'default'" (click)="setChartType('line')">
+                <div class="btn">
+                    <span class="material-symbols-rounded" style="--size: 24px; --wt: 100">show_chart</span>
+                    <span>Line</span>
+                </div>
+            </button>
+            <button mat-flat-button [color]="chartType === 'bar' ? 'primary' : 'default'" (click)="setChartType('bar')">
+                <div class="btn">
+                    <span class="material-symbols-rounded" style="--size: 24px; --wt: 100">bar_chart</span>
+                    <span>Bar</span>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <div style="display: block; height: 300px; width: 100%;">
+      <canvas baseChart
+        [data]="chartData"
+        [options]="lineChartOptions"
+        [type]="chartType">
+      </canvas>
+    </div>
+</div>
+
+
+<!-- <mat-card class="chart-container">
+  <mat-card-header>
+    <mat-card-title>Skills Breakdown by Screening Timeline</mat-card-title>
+    <mat-card-subtitle>
+      Compare the percentage of children with delays in specific developmental skills (Social Emotional, Cognitive, Motor, Language & Communication) across different screening timelines.
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div style="display: block; height: 400px; width: 100%;">
+      <canvas baseChart
+        [datasets]="lineChartData.datasets"
+        [labels]="lineChartData.labels"
+        [options]="lineChartOptions"
+        [type]="lineChartType">
+      </canvas>
+    </div>
+  </mat-card-content>
+
+  <div class="screening-legend">
+    <span class="screening-dot screening-1"></span> Screening 1
+    <span class="screening-dot screening-2"></span> Screening 2
+    <button mat-button class="view-toggle">Line</button>
+    <button mat-button class="view-toggle">Bar</button>
+  </div>
+</mat-card> -->

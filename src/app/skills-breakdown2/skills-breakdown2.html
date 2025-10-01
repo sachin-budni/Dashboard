@@ -1,0 +1,28 @@
+<div class="chart-container mat-elevation-z2">
+    <div class="chart-header">
+        <div class="header-text">
+            <h2>Skills Breakdown by Screening Timeline</h2>
+            <p>Compare the percentage of children with delays in specific developmental skills (Social Emotional, Cognitive, Motor, Language & Communication) across different screening timelines.</p>
+            <div class="legend-filter">
+                <div class="screening-label">
+                    <span class="dot-s1"></span> Screening 1
+                </div>
+                <div class="screening-label">
+                    <span class="dot-s2"></span> Screening 2
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-controls">
+            <!-- <button mat-flat-button [color]="chartType === 'line' ? 'primary' : 'default'" (click)="setChartType('line')">
+                <span class="material-symbols-rounded">show_chart</span>Line
+            </button>
+            <button mat-flat-button [color]="chartType === 'bar' ? 'primary' : 'default'" (click)="setChartType('bar')">
+                <span class="material-symbols-rounded">bar_chart</span> Bar
+            </button> -->
+        </div>
+    </div>
+    <div class="chart-container">
+        <canvas #chartCanvas></canvas>
+    </div>
+</div>
